@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sgin Up Today</h1>
+        <form id="form" novalidate>
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="name">Enter Name</label>
+                <input type="text" id="name" required placeholder="Enter Full name">
+            </div>
+            <!-- Phone Num -->
+            <div class="form-group">
+                <label for="phone">Enter Phone Number</label>
+                <input type="tel" id="phone" required placeholder="444-444-444">
+            </div>
+            <!-- Email-->
+            <div class="form-group">
+                <label for="email">Enter Email</label>
+                <input type="email" id="email" required placeholder="567Pros@gmail.com">
+            </div>
+            <!-- WebSite Url -->
+            <div class="form-group">
+                <label for="website">Enter WebSite Url</label>
+                <input type="url" id="website" required placeholder="https://567-Productions.com">
+            </div>
+            <div class="form-group">
+                <label for="password1">Enter Password</label>
+                <input type="password" id="password1" pattern="^(?=.*[a-z])(?=.*\d)(?=.*[\W_])[\w\W].+$" required
+                    placeholder="Create Password">
+            </div>
+            <div class="form-group">
+                <label for="password2">Confirm Passowrd</label>
+                <input type="password" id="password2" pattern="^(?=.*[a-z])(?=.*\d)(?=.*[\W_])[\w\W].+$" required
+                    placeholder="Confirm Password">
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <div class="message-container">
+            <h3 id="message">Don't Message</h3>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="js.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+/* Images created by: https://unsplash.com/@pawel_czerwinski */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "poppins", sans-serif;
+  font-size: 12px;
+  color: white;
+}
+
+.player-container {
+  margin-top: 3rem;
+  height: 500px;
+  width: 400px;
+  background-color: #565efc;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+.img-container {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  top: -50px;
+  left: 50px;
+}
+
+.img-container img {
+  height: 100%;
+  border: 2px solid white;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 5px 40px 5px rgba(0, 0, 0, 1);
+  transition: all 5s ease;
+  -webkit-transition: all 5s ease;
+  -moz-transition: all 5s ease;
+  -ms-transition: all 5s ease;
+  -o-transition: all 5s ease;
+}
+
+.activeimgs2{
+  border: 1px solid white;
+
+}
+
+.activeimgs {
+  animation: infinite imgss ease 4s;
+  -webkit-animation: infinite imgss ease 4s;
+  -webkit-transition: all 10s ease;
+  -moz-transition: all 10s ease;
+  -ms-transition: all 10s ease;
+  -o-transition: all 10s ease;
+}
+
+@keyframes imgss {
+  0% {
+  box-shadow: 0 5px 40px 5px rgba(0, 0, 0, 3);
+
+    border:#b005ff 3px solid;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+
+  50% {
+    border:#b005ff 3px solid;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+}
+
+/* Progress */
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 90%;
+}
+
+.progress {
+  background: #b005ff;
+  border-radius: 5px;
+  height: 100%;
+  transition: all 0.6s ease;
+  /*changethistoshowprogress*/
+  width: 0%;
+  transition: width 0.1s linear;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+}
+
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Controls */
+.player-controls {
+  position: relative;
+  top: -15px;
+  left: 120px;
+  width: 200px;
+}
+
+.fas {
+  font-size: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+  user-select: none;
+  transition: all ease 0.4s;
+  -webkit-transition: all ease 0.4s;
+  -moz-transition: all ease 0.4s;
+  -ms-transition: all ease 0.4s;
+  -o-transition: all ease 0.4s;
+}
+
+.fa-recycle,
+.fa-heart {
+  font-size: 18px;
+}
+
+.likes{
+  color: white;
+
+}
+
+.liked {
+  color: #b005ff;
+  animation: forwards liked ease;
+  -webkit-animation: forwards liked ease 2s;
+}
+
+@keyframes liked {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+
+.fas:hover {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  color: #b005ff;
+}
+
+.btnss {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .img-container {
+    left: 29px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+    top: -10px;
+    left: 100px;
+  }
+}
